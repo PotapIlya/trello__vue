@@ -1,5 +1,58 @@
-#app{
-  max-width: 1100px;
+
+
+.card{
+
+  &__wrapper{
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px #999;
+    margin-right: 30px;
+
+    max-width: 300px;
+    width: 100% ;
+    height: max-content;
+
+    &.sortable-chosen{
+      transform: rotate(5deg) !important;
+      transition: .3s;
+    }
+
+
+    &-title{
+
+      background: #999;
+    }
+    &-body{
+
+    }
+    &-el{
+      cursor: pointer;
+
+      &:hover{
+        background: #eee;
+        transition: .3s;
+      }
+    }
+  }
+}
+
+
+.modal {
+
+  background: rgba(0,0,0, .4);
   width: 100%;
-  margin: 0 auto;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &__wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #eee;
+    padding: 10px;
+    border-radius: 4px;
+  }
 }
